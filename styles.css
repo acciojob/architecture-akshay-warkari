@@ -1,64 +1,50 @@
 /*  your css code here. If applicable */
 body {
-  margin: 0;
   font-family: Arial, sans-serif;
   background-color: #cfd5cc;
+  margin: 0;
+  padding: 0;
 }
 
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
-	width:700px;
-	
+.imageContainer {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
 
-.banner img {
+.imageContainer img {
+  width: 80%;
+  max-width: 900px;
+  height: auto;
+}
+
+table {
+  width: 90%;
+  margin: 0 auto;
+  border-collapse:collapse;
+  border-spacing: 10px;
+  background-color: #cfd5cc;
+}
+
+td {
+  vertical-align: top;
+  padding: 10px;
+  background-color: #cfd5cc;
+  width: 33%;
+}
+
+td img {
   width: 100%;
   height: auto;
-  display:block;
-
+  display: block;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  gap: 10px;
-  background-color: #cfd5cc;
-  padding: 10px;
-}
-
-.grid-item {
-  background-color: #cfd5cc;
-  padding: 10px;
-}
-
-.grid-item img {
-  width:100px;
-  height:100px;
-	text-align: center;
-	
-}
-
-.center-text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
-  line-height: 1.6;
-}
-
-.objective {
-  grid-column: 2 / span 1;
-  text-align: left;
-  font-size: 15px;
-  line-height: 1.6;
+td p {
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 .objective h3 {
   text-align: center;
   margin-bottom: 10px;
-}
-
-.grid-item p a {
-  color: blue;
-  text-decoration: underline;
 }
